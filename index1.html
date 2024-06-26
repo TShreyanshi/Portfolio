@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio_web</title>
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--     
+        Header Section
+    -->
+    <header class="header sticky">
+        <span>
+            <span class="firstname">SHREYANSHI<i class="fa-regular fa-snowflake"></i></span>
+            <span class="lastname"><i class="fa-regular fa-snowflake"></i> PARASHAR</span>
+        </span>
+        <span><a class="menu-bars" href="#navbar"><i class="fa-solid fa-bars fa-2x"></i></a></span>
+    </header>
+
+    <div id="navbar" class="navbar">
+        <div class="xmark">
+            <a class="nav-cross" href="index1.html"><i class="fa-solid fa-xmark fa-3x XCross"></i></a>
+        </div>
+        <div class="nav">
+            <a class="nav-list" href="#home">HOME</a>
+            <a class="nav-list" href="#about">ABOUT ME</a>
+            <a class="nav-list" href="#project">PROJECTS</a>
+            <a class="nav-list" href="#interest">INTERESTS</a>
+            <a class="nav-list" href="#contact">CONNECT</a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var navbar = document.getElementById("navbar");
+            var menuBars = document.querySelector(".menu-bars");
+            var header = document.querySelector(".header");
+
+            menuBars.addEventListener("click", function () {
+                navbar.classList.toggle("show-navbar");
+                header.classList.toggle("hide-sticky");
+            });
+        });
+    </script>
+
+    <!--     
+        Header Section Closes
+     -->
+    <main>
+        <section id="home"><h1>Home Section</h1></section>
+        <section id="about"><h1>About Section</h1></section>
+        <section id="project"><h1>Project Section</h1></section>
+        <section id="interest"><h1>Interest Section</h1></section>
+        <section id="contact"><h1>Contact Section</h1></section>
+    </main>
+</body>
+</html>
